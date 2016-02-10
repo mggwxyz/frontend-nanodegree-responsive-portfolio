@@ -1,0 +1,27 @@
+.featured {
+    width: 100%;
+    margin: 1em auto;
+}
+
+#name {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 28px;
+}
+
+#profession {
+    font-size: 14px;
+}
+
+#featured-work {
+    flex-direction: column;
+}
+
+#featured-work-heading {
+
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 1em auto;
+}

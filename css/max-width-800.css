@@ -1,0 +1,27 @@
+#featured-work {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.featured {
+    width: 48%;
+}
+
+#logo-img {
+    max-width: 100px;
+    width: 100%;
+    max-height: 100px;
+}
+
+#logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#name {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 32px;
+}
