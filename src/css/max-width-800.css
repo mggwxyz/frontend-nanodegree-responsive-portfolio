@@ -1,7 +1,7 @@
 #featured-work {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .featured {
@@ -24,4 +24,9 @@
     margin-top: 0;
     margin-bottom: 0;
     font-size: 32px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.5em auto;
 }
