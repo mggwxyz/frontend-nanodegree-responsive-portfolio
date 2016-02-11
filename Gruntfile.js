@@ -1,11 +1,5 @@
 module.exports = function(grunt){
 
-    //Loads npm modules for corresponding grunt tasks
-    grunt.loadNpmTasks('grunt-responsive-images');
-    grunt.loadNpmTask('grunt-contrib-clean');
-    grunt.loadNpmTask('grunt-contrib-copy');
-    grunt.loadNpmTask('grunt-mkdir');
-
     grunt.initConfig({
 
         //Task to output optimized images to use with srcset
@@ -24,8 +18,8 @@ module.exports = function(grunt){
                 files: [{
                     expand: true,
                     src: ['*.{gif,jpg,png}'],
-                    cwd: 'images_src/',
-                    dest: 'images/'
+                    cwd: 'src/images_src/',
+                    dest: 'src/images/'
                 }]
             }
         },
@@ -33,7 +27,7 @@ module.exports = function(grunt){
         //Task to clean/delete folders/files if they exists
         clean: {
             dev: {
-                src: ['images']
+                src: ['src/images/']
             }
         },
 
@@ -41,7 +35,7 @@ module.exports = function(grunt){
         mkdir: {
             dev: {
                 options: {
-                    create: ['images']
+                    create: ['src/images/']
                 }
             }
         },
@@ -51,11 +45,19 @@ module.exports = function(grunt){
             dev: {
                 files: [{
                     expand: true,
-                    src: 'images_src/fixed/*.{gif,jpg,png}',
-                    dest: 'images/'
+                    src: 'src/images_src/fixed/*.{gif,jpg,png}',
+                    dest: 'src/images/'
                 }]
             },
         }
-        
+
     });
+
+    //Loads npm modules for corresponding grunt tasks
+    grunt.loadNpmTasks('grunt-responsive-images');
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-mkdir');
+    grunt.registerTask('default', ['clean', 'mkdir', 'copy', 'responsive_images']);
+    
 };
