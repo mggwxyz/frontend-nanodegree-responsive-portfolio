@@ -1,32 +1,13 @@
-#featured-work {
+#featured-work-container {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.featured {
+#featured-work-label {
+    font-size: 28px;
+}
+
+.featured-work {
     width: 48%;
-}
-
-#logo-img {
-    max-width: 100px;
-    width: 100%;
-    max-height: 100px;
-}
-
-#logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-#name {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 32px;
-}
-
-h2 {
-    font-size: 1.5em;
-    margin: 0.5em auto;
 }
