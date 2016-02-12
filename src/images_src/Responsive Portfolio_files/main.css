@@ -142,7 +142,7 @@ a {
     bottom: 0;
     width: 100%;
     background-color: black;
-    padding: 0 0 0 0;
+    padding: 0 10px 0px 10px;
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -152,7 +152,6 @@ a {
 .featured-work-title-container {
     display: flex;
     justify-content: space-between;
-    margin: 5px;
 }
 
 .featured-work-description {
