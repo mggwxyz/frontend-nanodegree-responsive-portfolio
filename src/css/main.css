@@ -7,7 +7,7 @@
 
 body {
     font-family: Titillium Web, sans-serif;
-    background-color: #1ce;
+    background-color: #59Ace5;
     color: black;
     border: 0;
     margin: 0;
@@ -17,6 +17,7 @@ header {
     display: flex;
     width: 90%;
     margin: 10px auto;
+    /*background-color: #1c3463;*/
 }
 
 article {
@@ -52,6 +53,7 @@ a {
 
 #logo-image {
     max-width: 110px;
+    border-radius: 5px;
 }
 
 #personal-info-container {
@@ -67,19 +69,25 @@ a {
     margin-bottom: 0;
     font-size: 40px;
     text-transform: lowercase;
-    background-color: black;
-    color: gold;
+    background-color: #1c3463;
+    color: white;
     padding: 0 10px 5px 10px;
     text-align: right;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 #profession {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 18px;
-    background-color: black;
-    color: gold;
+    background-color: #1c3463;;
+    color: white;
     padding: 5px 10px 10px 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
 }
 
 #main-image {
@@ -100,10 +108,11 @@ a {
 }
 
 #featured-work-label {
-    background-color: black;
-    color: gold;
+    background-color: #1c3463;;
+    color: white;
     padding: 0 0.5em 0 0.5em;
     text-transform: lowercase;
+    border-radius: 5px;
 }
 
 #featured-work-container {
@@ -112,12 +121,13 @@ a {
     justify-content: space-between;
     width: 100%;
     margin-bottom: 20px;
+
 }
 
 #copyright {
     padding: 5px 10px 5px 10px;
-    background-color: black;
-    color: gold;
+    background-color: #1c3463;;
+    color: white;
     margin: 0 auto;
 }
 
@@ -126,10 +136,10 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: gold;
     width: 32%;
     position: relative;
     margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 .featured-work-title {
@@ -138,15 +148,22 @@ a {
     font-size: 20px;
 }
 
+.featured-work-image {
+    border-radius: 5px;
+}
+
 .featured-work-information {
     bottom: 0;
     width: 100%;
-    background-color: black;
+    color: white;
+    background-color: #1c3463;
     padding: 0 0 0 0;
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
     position: absolute;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .featured-work-title-container {
@@ -155,10 +172,17 @@ a {
     margin: 5px;
 }
 
-.featured-work-description {
+.featured-work-description-container {
     height: 100%;
-    background-color: gold;
+    background-color: white;
     color: black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.featured-work-description {
+    margin: 10px;
 }
 
 .arrow {
@@ -173,9 +197,17 @@ a {
 }
 
 .full-height {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     height: 100%;
 }
 
 .hidden-away {
     display: none;
+}
+
+.invert {
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
