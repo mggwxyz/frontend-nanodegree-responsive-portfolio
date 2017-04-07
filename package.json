@@ -1,26 +1,27 @@
 {
-  "name": "responsive-portfolio",
+  "name": "frontend-nanodegree-responsive-portfolio",
   "version": "1.0.0",
-  "description": "Responsive portfolio for Udacity's Front-end Web Developer Nanodegree",
+  "description": "A responsive portfolio for Udacity's Frontend Nanodegree",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "grunt && cd dist && http-server"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mgg9xv/responsive-portfolio.git"
+    "url": "git+https://github.com/mggwxyz/frontend-nanodegree-responsive-portfolio.git"
   },
   "author": "Michael Gilbertson",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mgg9xv/responsive-portfolio/issues"
+    "url": "https://github.com/mggwxyz/frontend-nanodegree-responsive-portfolio/issues"
   },
-  "homepage": "https://github.com/mgg9xv/responsive-portfolio#readme",
+  "homepage": "https://github.com/mggwxyz/frontend-nanodegree-responsive-portfolio#readme",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-clean": "^0.7.0",
     "grunt-contrib-copy": "^0.8.2",
     "grunt-mkdir": "^0.1.2",
-    "grunt-responsive-images": "^0.1.7"
+    "grunt-responsive-images": "^0.1.7",
+    "http-server": "^0.9.0"
   }
 }

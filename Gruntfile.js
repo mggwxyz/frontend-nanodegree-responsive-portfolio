@@ -4,7 +4,7 @@ module.exports = function(grunt){
 
         //Task to output optimized images to use with srcset
         responsive_images: {
-            dev: {
+            dist: {
                 options: {
                     //Configure grunt to use ImageMagick as graphics engine
                     engine: 'im',
@@ -18,38 +18,38 @@ module.exports = function(grunt){
                 files: [{
                     expand: true,
                     src: ['*.{gif,jpg,png}'],
-                    cwd: 'src/images_src/',
-                    dest: 'src/images/'
+                    cwd: 'src/images/',
+                    dest: 'dist/images/'
                 }]
             }
         },
 
         //Task to clean/delete folders/files if they exists
         clean: {
-            dev: {
-                src: ['src/images/']
+            dist: {
+                src: ['dist/']
             }
         },
 
         //Task to create folder if it doesn't exist
         mkdir: {
-            dev: {
+            dist: {
                 options: {
-                    create: ['src/images/']
+                    create: ['dist/']
                 }
             }
         },
 
         //Task to copy files into a folder
         copy: {
-            dev: {
+            dist: {
                 files: [{
                     expand: true,
-                    cwd: 'src/images_src/fixed/',
-                    src: '**',
-                    dest: 'src/images'
+                    cwd: 'src',
+                    src: ['css/**', 'js/**', 'images/fixed/**'],
+                    dest: 'dist/'
                 }]
-            },
+            }
         }
 
     });
@@ -59,6 +59,6 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-mkdir');
-    grunt.registerTask('default', ['clean', 'mkdir', 'copy', 'responsive_images']);
+    grunt.registerTask('default', ['clean', 'mkdir', 'copy','responsive_images']);
 
 };
