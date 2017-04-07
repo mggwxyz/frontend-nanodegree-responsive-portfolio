@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "grunt && cd dist && http-server",
-    "deploy": "gh-pages -d dist"
+    "deploy": "grunt && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
