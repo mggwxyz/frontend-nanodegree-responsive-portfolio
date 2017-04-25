@@ -1,10 +1,12 @@
 {
   "name": "frontend-nanodegree-responsive-portfolio",
   "version": "1.0.0",
-  "description": "A responsive portfolio for Udacity's Frontend Nanodegree",
+  "description": "A responsive portfolio for Udacity's Front-End Web Developer Nanodegree",
   "main": "index.js",
   "scripts": {
-    "start": "grunt && cd dist && http-server",
+    "start": "grunt && cd dist && http-server -o -p 8080",
+    "dev": "npm start",
+    "demo": "npm start",
     "deploy": "grunt && gh-pages -d dist"
   },
   "repository": {
