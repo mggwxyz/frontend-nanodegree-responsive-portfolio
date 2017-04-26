@@ -1,6 +1,7 @@
 # Responsive Portfolio | Front-End Nanodegree
-![Resposive Portfolio Icon](src/images/fixed/responsive-portfolio-favicon.ico "Responsive Portfolio Icon")
+
 A responsive portfolio created for Udacity's Front-End Web Developer Nanodegree
+![Resposive Portfolio Icon](src/images/fixed/responsive-portfolio-favicon.ico "Responsive Portfolio Icon")
 
 ## Try It Out
 [https://mggwxyz.github.io/frontend-nanodegree-responsive-portfolio](https://mggwxyz.github.io/frontend-nanodegree-responsive-portfolio)

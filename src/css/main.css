@@ -201,3 +201,25 @@ img {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
+
+.icon {
+    width: 16px;
+    height: 16px;
+    fill: #000000
+}
+
+.icon path,polygon {
+    fill: #00000;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover > .icon path,polygon {
+    fill: #59ACE5;
+}
+
+a:hover {
+    color: #59ACE5;
+}
