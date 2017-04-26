@@ -46,7 +46,7 @@ module.exports = function(grunt){
                 files: [{
                     expand: true,
                     cwd: 'src',
-                    src: ['js/**', 'images/fixed/**', 'index.html'],
+                    src: ['js/**', 'images/fixed/**', 'fonts/**','index.html'],
                     dest: 'dist/'
                 }]
             }
@@ -93,10 +93,28 @@ module.exports = function(grunt){
             }
         },
 
+        pug: {
+            build: {
+                options: {
+                    data: {
+                        debug: false
+                    },
+                    pretty: true
+                },
+                files: {
+                    'src/index.html': 'src/views/index.pug'
+                }
+            }
+        },
+
         watch: {
             stylesheets: {
                 files: 'src/**/*.scss',
                 tasks: ['stylesheets']
+            },
+            pug :{
+                files: 'src/**/*.pug',
+                tasks: ['pug']
             }
         }
 
@@ -112,13 +130,14 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-pug');
 
     grunt.registerTask('stylesheets', 'Compiles the stylesheets',
         [ 'sass', 'autoprefixer', 'cssmin' ]
     );
 
     grunt.registerTask('build', 'Compiles all of the assets and copies the files to the dist director.',
-        ['clean', 'mkdir', 'stylesheets', 'copy', 'responsive_images']
+        ['clean', 'mkdir', 'stylesheets','pug', 'copy', 'responsive_images']
     );
 
     grunt.registerTask('develop', 'Watches the project for changes, automatically builds them and runs a server',

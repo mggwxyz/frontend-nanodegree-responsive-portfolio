@@ -1,0 +1,103 @@
+doctype html
+html
+    head
+        title Responsive Portfolio | Front-End Nanodegree
+
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+
+        link(href='images/fixed/responsive-portfolio-favicon.ico' rel='icon' type='image/x-icon')
+
+        link(href='stylesheets/css/main.css' rel='stylesheet')
+    body
+
+        #main-container
+
+            header#header
+                #logo-container
+                    img#logo-image(src='images/fixed/brackets_square.svg' alt='logo')
+
+                #personal-info-container
+                    h1#name Michael Gilbertson
+                    p#profession &#60;!-- Web Developer --&#62;
+
+            #main-image-container
+                img#main-image(
+                    src='images/machu-picchu-hero-large.jpg'
+                    alt='main image'
+                    srcset='images/machu-picchu-hero-small.jpg 320w, images/machu-picchu-hero-medium.jpg 640w, images/machu-picchu-hero-large.jpg 1024w'
+                    sizes='(max-width: 550px) 320px'
+                )
+
+            article#article
+                #featured-work-label-container
+                    h2#featured-work-label Featured Work
+                #featured-work-container
+
+                    // Neighborhood Map Project
+                    .featured-work
+                        img.featured-work-image(src='images/neighborhood-map-screenshot-medium.png' alt='Neighborhood Map Project Screenshot')
+                        .featured-work-information
+                            .featured-work-title-container
+                                p.featured-work-title Neighborhood Map Project
+
+                                // Actions Icon
+                                include ../images/fixed/options-icon.svg
+
+                        .featured-work-description-container.hidden-away
+                            p.featured-work-description A map application for Udacity's Front-End Web Developer Nanodegree
+                            br
+                            br
+                            a.online-demo-link(href='https://mggwxyz.github.io/frontend-nanodegree-neighborhood-map')
+                                include ../images/fixed/person-with-laptop-icon.svg
+                                span Online Demo
+                            a(title='Neighborhood Map Source Code' href='https://github.com/mggwxyz/frontend-nanodegree-neighborhood-map')
+                                include ../images/fixed/github-icon.svg
+                                span Source code
+
+                    // Arcade Game Project
+                    .featured-work
+                        img.featured-work-image(src='images/arcade-game-screenshot-medium.png' alt='Arcade Game Project Screenshot')
+                        .featured-work-information
+                            .featured-work-title-container
+                                p.featured-work-title Arcade Game Project
+
+                                // Actions Icon
+                                include ../images/fixed/options-icon.svg
+
+                        .featured-work-description-container.hidden-away
+                            p.featured-work-description An arcade game for Udacity's Front-End Web Developer Nanodegree
+                            br
+                            br
+                            a.online-demo-link(href='https://mggwxyz.github.io/frontend-nanodegree-arcade-game')
+                                include ../images/fixed/person-with-laptop-icon.svg
+                                span Online Demo
+                            a(title='Arcade Game Source Code' href='https://github.com/mggwxyz/frontend-nanodegree-arcade-game')
+                                include ../images/fixed/github-icon.svg
+                                span Source code
+
+                    // Resume Project
+                    .featured-work
+                        img.featured-work-image(src='images/resume-screenshot-medium.png' alt='Resume Project Screenshot')
+                        .featured-work-information
+                            .featured-work-title-container
+                                p.featured-work-title Resume Project
+
+                                // Actions Icon
+                                include ../images/fixed/options-icon.svg
+
+                        .featured-work-description-container.hidden-away
+                            p.featured-work-description A responsive resume for Udacity's Front-End Web Developer Nanodegree
+                            br
+                            br
+                            a.online-demo-link(href='https://mggwxyz.github.io/frontend-nanodegree-resume')
+                                include ../images/fixed/person-with-laptop-icon.svg
+                                span Online Demo
+                            a(title='Resume Source Code' href='https://github.com/mggwxyz/frontend-nanodegree-resume')
+                                include ../images/fixed/github-icon.svg
+                                span Source code
+            footer
+                a#github-icon-link(title='Responsive Portfolio Source Code' href='https://github.com/mggwxyz/frontend-nanodegree-responsive-portfolio')
+                    include ../images/fixed/main-github-icon.svg
+
+        script(src='js/main.js')

@@ -1,4 +1,5 @@
 @import "normalize";
+@import "fonts";
 
 * {
   -webkit-box-sizing: border-box;
@@ -8,13 +9,12 @@
 }
 
 body {
-  font-family: Titillium Web, sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   background-color: #59ACE5;
   color: black;
   border: 0;
   margin: 0;
 }
-
 
 header {
   display: flex;
@@ -49,18 +49,18 @@ footer {
 
 }
 
-#github-icon {
+#main-github-icon {
   width: 32px;
   height: 32px;
   fill: #000000
 }
 
 
-#github-icon path,polygon {
+#main-github-icon path,polygon {
   fill: #ffffff;
 }
 
-a:hover > #github-icon path,polygon {
+a:hover > #main-github-icon path,polygon {
   fill: #59ACE5;
 }
 

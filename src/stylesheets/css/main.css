@@ -369,12 +369,18 @@ template {
 [hidden] {
   display: none; }
 
+@font-face {
+  font-family: 'Titillium Web';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/Titillium-Web-regular/Titillium-Web-regular.eot");
+  src: url("../../fonts/Titillium-Web-regular/Titillium-Web-regular.eot?#iefix") format("embedded-opentype"), local("Titillium Web"), local("Titillium-Web-regular"), url("../../fonts/Titillium-Web-regular/Titillium-Web-regular.woff2") format("woff2"), url("../../fonts/Titillium-Web-regular/Titillium-Web-regular.woff") format("woff"), url("../../fonts/Titillium-Web-regular/Titillium-Web-regular.ttf") format("truetype"), url("../../fonts/Titillium-Web-regular/Titillium-Web-regular.svg#TitilliumWeb") format("svg"); }
 * {
   -ms-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
-  font-family: Titillium Web, sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   background-color: #59ACE5;
   color: black;
   border: 0;
@@ -412,15 +418,15 @@ footer {
           align-items: center;
   background-color: #1C3463; }
 
-#github-icon {
+#main-github-icon {
   width: 32px;
   height: 32px;
   fill: #000000; }
 
-#github-icon path, polygon {
+#main-github-icon path, polygon {
   fill: #ffffff; }
 
-a:hover > #github-icon path, polygon {
+a:hover > #main-github-icon path, polygon {
   fill: #59ACE5; }
 
 #main-container {
