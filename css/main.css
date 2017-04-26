@@ -161,7 +161,8 @@ img {
 .featured-work-title-container {
     display: flex;
     justify-content: space-between;
-    margin: 5px;
+    padding: 5px;
+    border-radius: 5px 5px;
 }
 
 .featured-work-description-container {
@@ -183,8 +184,16 @@ img {
     height: 24px
 }
 
-.arrow:hover {
-    color: #11CCEE;
+.arrow:hover{
+    cursor: pointer;
+}
+
+.arrow path {
+    fill: #ffffff;
+}
+
+.arrow:hover path {
+    fill: #59ACE5;
 }
 
 .full-height {
