@@ -1,179 +1,108 @@
 <!DOCTYPE html>
 <html>
-<head>
-
+  <head>
     <title>Responsive Portfolio | Front-End Nanodegree</title>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet'>
-
-    <link rel="stylesheet" href="stylesheets/css/main.css"/>
-    <link rel="stylesheet" media="screen and (max-width: 800px)" href="css/max-width-800.css" />
-    <link rel="stylesheet" media="screen and (max-width: 550px)" href="css/max-width-550.css" />
-
-    <link rel="icon" href="images/fixed/responsive-portfolio-favicon.ico" type="image/x-icon">
-
-</head>
-<body>
-
+    <link href="images/fixed/responsive-portfolio-favicon.ico" rel="icon" type="image/x-icon">
+    <link href="stylesheets/css/main.css" rel="stylesheet">
+  </head>
+  <body>
     <div id="main-container">
-        <header id="header">
-            <div id="logo-container">
-                <img id="logo-image" src="images/fixed/brackets_square.svg" alt="Logo"/>
-            </div>
-            <div id="personal-info-container">
-                <h1 id="name">Michael Gilbertson</h1>
-                <p id="profession">&#60;!-- Web Developer --&#62;</p>
-            </div>
-        </header>
-        <div id="main-image-container">
-            <img id="main-image" src="images/machu-pichu-hero-large.jpg" alt="Main Image"
-                 srcset="images/machu-pichu-hero-small.jpg 320w,
-                images/machu-pichu-hero-medium.jpg 640w,
-                images/machu-pichu-hero-large.jpg 1024w"
-                 sizes="(max-width: 550px) 320px"/>
+      <header id="header">
+        <div id="logo-container"><img id="logo-image" src="images/fixed/brackets_square.svg" alt="logo"></div>
+        <div id="personal-info-container">
+          <h1 id="name">Michael Gilbertson</h1>
+          <p id="profession">&#60;!-- Web Developer --&#62;</p>
         </div>
-        <article id="article">
-            <div id="featured-work-label-container">
-                <h2 id="featured-work-label">Featured Work</h2>
+      </header>
+      <div id="main-image-container"><img id="main-image" src="images/machu-picchu-hero-large.jpg" alt="main image" srcset="images/machu-picchu-hero-small.jpg 320w, images/machu-picchu-hero-medium.jpg 640w, images/machu-picchu-hero-large.jpg 1024w" sizes="(max-width: 550px) 320px"></div>
+      <article id="article">
+        <div id="featured-work-label-container">
+          <h2 id="featured-work-label">Featured Work</h2>
+        </div>
+        <div id="featured-work-container">
+          <!-- Neighborhood Map Project-->
+          <div class="featured-work"><img class="featured-work-image" src="images/neighborhood-map-screenshot-medium.png" alt="Neighborhood Map Project Screenshot">
+            <div class="featured-work-information">
+              <div class="featured-work-title-container">
+                <p class="featured-work-title">Neighborhood Map Project</p>
+                <!-- Actions Icon--><svg class="actions-icon" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle cx="12" cy="6" r="2"></circle>
+        <circle cx="12" cy="12" r="2"></circle>
+        <circle cx="12" cy="18" r="2"></circle>
+    </g>
+</svg>
+              </div>
             </div>
-            <div id="featured-work-container">
-                <div class="featured-work">
-                    <img class="featured-work-image" src="images/neighborhood-map-screenshot-medium.png" alt="Portfolio App"/>
-                    <div class="featured-work-information">
-                        <div class="featured-work-title-container">
-                            <p class="featured-work-title">Neighboorhood Map Project</p>
-
-                            <!-- Actions Icon -->
-                            <svg class="actions-icon" tabindex="0" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <circle cx="12" cy="6" r="2"></circle>
-                                    <circle cx="12" cy="12" r="2"></circle>
-                                    <circle cx="12" cy="18" r="2"></circle>
-                                </g>
-                            </svg>
-
-                        </div>
-                        <div class="featured-work-description-container hidden-away">
-                            <p class="featured-work-description">
-                                A map application for Udacity's Front-End Web Developer Nanodegree
-                                <br>
-                                <br>
-                                <a class="online-demo-link" href="https://mggwxyz.github.io/frontend-nanodegree-neighborhood-map">
-                                    <!-- Online Demo Icon -->
-                                    <svg class="icon" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <path fill="#000000" d="M4.54253663 22.102366 2 14 13 14 15.6396076 20.8577294 22 20.8577294 22 22z"></path>
-                                            <path d="M13.3517574,9.6457045 C11.9648509,9.01768623 11,7.62151962 11,6 C11,3.790861 12.790861,2 15,2 C17.209139,2 19,3.790861 19,6 C19,7.65738762 17.991992,9.07934236 16.5555939,9.68624636 C17.2330549,9.82681241 18.5700981,10.3136794 19.7048529,12 C21.300213,14.3708104 22.185218,19.8821377 22.185218,19.8821377 L16.4647907,19.8821377 L13.9813682,13.0560729 L7.42815887,13.0560729 C7.42815887,13.0560729 7.72034181,11.9159976 9.26439068,10.7725936 C10.4324117,9.90764694 12.4421522,9.69700332 13.3517574,9.6457045 Z" fill="#000000"></path>
-                                        </g>
-                                    </svg>
-                                    Online Demo
-                                </a>
-                                <a title="Neighborhood Map Source Code" href="https://github.com/mggwxyz/frontend-nanodegree-neighborhood-map">
-                                    <!-- GitHub Icon -->
-                                    <svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
-                                        <path class="icon" fill="#000000" d="M8 0.198c-4.418 0-8 3.582-8 8 0 3.535 2.292 6.533 5.471 7.591 0.4 0.074 0.547-0.174 0.547-0.385 0-0.191-0.008-0.821-0.011-1.489-2.226 0.484-2.695-0.944-2.695-0.944-0.364-0.925-0.888-1.171-0.888-1.171-0.726-0.497 0.055-0.486 0.055-0.486 0.803 0.056 1.226 0.824 1.226 0.824 0.714 1.223 1.872 0.869 2.328 0.665 0.072-0.517 0.279-0.87 0.508-1.070-1.777-0.202-3.645-0.888-3.645-3.954 0-0.873 0.313-1.587 0.824-2.147-0.083-0.202-0.357-1.015 0.077-2.117 0 0 0.672-0.215 2.201 0.82 0.638-0.177 1.322-0.266 2.002-0.269 0.68 0.003 1.365 0.092 2.004 0.269 1.527-1.035 2.198-0.82 2.198-0.82 0.435 1.102 0.162 1.916 0.079 2.117 0.513 0.56 0.823 1.274 0.823 2.147 0 3.073-1.872 3.749-3.653 3.947 0.287 0.248 0.543 0.735 0.543 1.481 0 1.070-0.009 1.932-0.009 2.195 0 0.213 0.144 0.462 0.55 0.384 3.177-1.059 5.466-4.057 5.466-7.59 0-4.418-3.582-8-8-8z"></path>
-                                    </svg>
-                                    Source Code
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="featured-work">
-                    <img class="featured-work-image" src="images/arcade-game-screenshot-medium.png" alt="Arcade Clone Project Screenshot"/>
-                    <div class="featured-work-information">
-                        <div class="featured-work-title-container">
-                            <p class="featured-work-title">Arcade Game Project</p>
-
-                            <!-- Actions Icon -->
-                            <svg class="actions-icon" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <circle cx="12" cy="6" r="2"></circle>
-                                    <circle cx="12" cy="12" r="2"></circle>
-                                    <circle cx="12" cy="18" r="2"></circle>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="featured-work-description-container hidden-away">
-                            <p class="featured-work-description">
-                                An arcade game for Udacity's Front-End Web Developer Nanodegree
-                                <br>
-                                <br>
-                                <a class="online-demo-link" href="https://mggwxyz.github.io/frontend-nanodegree-arcade-game">
-                                    <!-- Online Demo Icon -->
-                                    <svg class="icon" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <path fill="#000000" d="M4.54253663 22.102366 2 14 13 14 15.6396076 20.8577294 22 20.8577294 22 22z"></path>
-                                            <path d="M13.3517574,9.6457045 C11.9648509,9.01768623 11,7.62151962 11,6 C11,3.790861 12.790861,2 15,2 C17.209139,2 19,3.790861 19,6 C19,7.65738762 17.991992,9.07934236 16.5555939,9.68624636 C17.2330549,9.82681241 18.5700981,10.3136794 19.7048529,12 C21.300213,14.3708104 22.185218,19.8821377 22.185218,19.8821377 L16.4647907,19.8821377 L13.9813682,13.0560729 L7.42815887,13.0560729 C7.42815887,13.0560729 7.72034181,11.9159976 9.26439068,10.7725936 C10.4324117,9.90764694 12.4421522,9.69700332 13.3517574,9.6457045 Z" fill="#000000"></path>
-                                        </g>
-                                    </svg>
-                                    Online Demo
-                                </a>
-                                <a title="Arcade Game Source Code" href="https://github.com/mggwxyz/frontend-nanodegree-arcade-game">
-                                    <!-- GitHub Icon -->
-                                    <svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
-                                        <path fill="#000000" d="M8 0.198c-4.418 0-8 3.582-8 8 0 3.535 2.292 6.533 5.471 7.591 0.4 0.074 0.547-0.174 0.547-0.385 0-0.191-0.008-0.821-0.011-1.489-2.226 0.484-2.695-0.944-2.695-0.944-0.364-0.925-0.888-1.171-0.888-1.171-0.726-0.497 0.055-0.486 0.055-0.486 0.803 0.056 1.226 0.824 1.226 0.824 0.714 1.223 1.872 0.869 2.328 0.665 0.072-0.517 0.279-0.87 0.508-1.070-1.777-0.202-3.645-0.888-3.645-3.954 0-0.873 0.313-1.587 0.824-2.147-0.083-0.202-0.357-1.015 0.077-2.117 0 0 0.672-0.215 2.201 0.82 0.638-0.177 1.322-0.266 2.002-0.269 0.68 0.003 1.365 0.092 2.004 0.269 1.527-1.035 2.198-0.82 2.198-0.82 0.435 1.102 0.162 1.916 0.079 2.117 0.513 0.56 0.823 1.274 0.823 2.147 0 3.073-1.872 3.749-3.653 3.947 0.287 0.248 0.543 0.735 0.543 1.481 0 1.070-0.009 1.932-0.009 2.195 0 0.213 0.144 0.462 0.55 0.384 3.177-1.059 5.466-4.057 5.466-7.59 0-4.418-3.582-8-8-8z"></path>
-                                    </svg>
-                                    Source Code
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="featured-work">
-                    <img class="featured-work-image" src="images/resume-screenshot-medium.png" alt="Resume Project Screenshot"/>
-                    <div class="featured-work-information" >
-                        <div class="featured-work-title-container">
-                            <p class="featured-work-title">Resume Project</p>
-                            <!-- Actions Icon -->
-                            <svg class="actions-icon" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <circle cx="12" cy="6" r="2"></circle>
-                                    <circle cx="12" cy="12" r="2"></circle>
-                                    <circle cx="12" cy="18" r="2"></circle>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="featured-work-description-container hidden-away">
-                            <p class="featured-work-description">
-                                A responsive resume for Udacity's Front-End Web Developer Nanodegree</br></br>
-
-                                <a class="online-demo-link" href="https://mggwxyz.github.io/frontend-nanodegree-resume">
-                                    <!-- Online Demo Icon -->
-                                    <svg class="icon" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <path fill="#000000" d="M4.54253663 22.102366 2 14 13 14 15.6396076 20.8577294 22 20.8577294 22 22z"></path>
-                                            <path d="M13.3517574,9.6457045 C11.9648509,9.01768623 11,7.62151962 11,6 C11,3.790861 12.790861,2 15,2 C17.209139,2 19,3.790861 19,6 C19,7.65738762 17.991992,9.07934236 16.5555939,9.68624636 C17.2330549,9.82681241 18.5700981,10.3136794 19.7048529,12 C21.300213,14.3708104 22.185218,19.8821377 22.185218,19.8821377 L16.4647907,19.8821377 L13.9813682,13.0560729 L7.42815887,13.0560729 C7.42815887,13.0560729 7.72034181,11.9159976 9.26439068,10.7725936 C10.4324117,9.90764694 12.4421522,9.69700332 13.3517574,9.6457045 Z" fill="#000000"></path>
-                                        </g>
-                                    </svg>
-                                    Online Demo
-                                </a>
-                                <a title="Resume Source Code" href="https://github.com/mggwxyz/frontend-nanodegree-resume">
-                                    <!-- GitHub Icon -->
-                                    <svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
-                                        <path fill="#000000" d="M8 0.198c-4.418 0-8 3.582-8 8 0 3.535 2.292 6.533 5.471 7.591 0.4 0.074 0.547-0.174 0.547-0.385 0-0.191-0.008-0.821-0.011-1.489-2.226 0.484-2.695-0.944-2.695-0.944-0.364-0.925-0.888-1.171-0.888-1.171-0.726-0.497 0.055-0.486 0.055-0.486 0.803 0.056 1.226 0.824 1.226 0.824 0.714 1.223 1.872 0.869 2.328 0.665 0.072-0.517 0.279-0.87 0.508-1.070-1.777-0.202-3.645-0.888-3.645-3.954 0-0.873 0.313-1.587 0.824-2.147-0.083-0.202-0.357-1.015 0.077-2.117 0 0 0.672-0.215 2.201 0.82 0.638-0.177 1.322-0.266 2.002-0.269 0.68 0.003 1.365 0.092 2.004 0.269 1.527-1.035 2.198-0.82 2.198-0.82 0.435 1.102 0.162 1.916 0.079 2.117 0.513 0.56 0.823 1.274 0.823 2.147 0 3.073-1.872 3.749-3.653 3.947 0.287 0.248 0.543 0.735 0.543 1.481 0 1.070-0.009 1.932-0.009 2.195 0 0.213 0.144 0.462 0.55 0.384 3.177-1.059 5.466-4.057 5.466-7.59 0-4.418-3.582-8-8-8z"></path>
-                                    </svg>
-                                    Source Code
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="featured-work-description-container hidden-away">
+              <p class="featured-work-description">A map application for Udacity's Front-End Web Developer Nanodegree</p><br><br><a class="online-demo-link" href="https://mggwxyz.github.io/frontend-nanodegree-neighborhood-map"><svg class="icon" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path fill="#000000" d="M4.54253663 22.102366 2 14 13 14 15.6396076 20.8577294 22 20.8577294 22 22z"></path>
+        <path d="M13.3517574,9.6457045 C11.9648509,9.01768623 11,7.62151962 11,6 C11,3.790861 12.790861,2 15,2 C17.209139,2 19,3.790861 19,6 C19,7.65738762 17.991992,9.07934236 16.5555939,9.68624636 C17.2330549,9.82681241 18.5700981,10.3136794 19.7048529,12 C21.300213,14.3708104 22.185218,19.8821377 22.185218,19.8821377 L16.4647907,19.8821377 L13.9813682,13.0560729 L7.42815887,13.0560729 C7.42815887,13.0560729 7.72034181,11.9159976 9.26439068,10.7725936 C10.4324117,9.90764694 12.4421522,9.69700332 13.3517574,9.6457045 Z" fill="#000000"></path>
+    </g>
+</svg><span>Online Demo</span></a><a title="Neighborhood Map Source Code" href="https://github.com/mggwxyz/frontend-nanodegree-neighborhood-map"><svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+    <path class="icon" fill="#000000" d="M8 0.198c-4.418 0-8 3.582-8 8 0 3.535 2.292 6.533 5.471 7.591 0.4 0.074 0.547-0.174 0.547-0.385 0-0.191-0.008-0.821-0.011-1.489-2.226 0.484-2.695-0.944-2.695-0.944-0.364-0.925-0.888-1.171-0.888-1.171-0.726-0.497 0.055-0.486 0.055-0.486 0.803 0.056 1.226 0.824 1.226 0.824 0.714 1.223 1.872 0.869 2.328 0.665 0.072-0.517 0.279-0.87 0.508-1.070-1.777-0.202-3.645-0.888-3.645-3.954 0-0.873 0.313-1.587 0.824-2.147-0.083-0.202-0.357-1.015 0.077-2.117 0 0 0.672-0.215 2.201 0.82 0.638-0.177 1.322-0.266 2.002-0.269 0.68 0.003 1.365 0.092 2.004 0.269 1.527-1.035 2.198-0.82 2.198-0.82 0.435 1.102 0.162 1.916 0.079 2.117 0.513 0.56 0.823 1.274 0.823 2.147 0 3.073-1.872 3.749-3.653 3.947 0.287 0.248 0.543 0.735 0.543 1.481 0 1.070-0.009 1.932-0.009 2.195 0 0.213 0.144 0.462 0.55 0.384 3.177-1.059 5.466-4.057 5.466-7.59 0-4.418-3.582-8-8-8z"></path>
+</svg><span>Source code</span></a>
             </div>
-        </article>
-        <footer>
-            <a id="github-icon-link" title="Responsive Portolio Source Code" href="https://github.com/mggwxyz/frontend-nanodegree-responsive-portfolio">
-                <svg id="github-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
-                    <path fill="#000000" d="M8 0.198c-4.418 0-8 3.582-8 8 0 3.535 2.292 6.533 5.471 7.591 0.4 0.074 0.547-0.174 0.547-0.385 0-0.191-0.008-0.821-0.011-1.489-2.226 0.484-2.695-0.944-2.695-0.944-0.364-0.925-0.888-1.171-0.888-1.171-0.726-0.497 0.055-0.486 0.055-0.486 0.803 0.056 1.226 0.824 1.226 0.824 0.714 1.223 1.872 0.869 2.328 0.665 0.072-0.517 0.279-0.87 0.508-1.070-1.777-0.202-3.645-0.888-3.645-3.954 0-0.873 0.313-1.587 0.824-2.147-0.083-0.202-0.357-1.015 0.077-2.117 0 0 0.672-0.215 2.201 0.82 0.638-0.177 1.322-0.266 2.002-0.269 0.68 0.003 1.365 0.092 2.004 0.269 1.527-1.035 2.198-0.82 2.198-0.82 0.435 1.102 0.162 1.916 0.079 2.117 0.513 0.56 0.823 1.274 0.823 2.147 0 3.073-1.872 3.749-3.653 3.947 0.287 0.248 0.543 0.735 0.543 1.481 0 1.070-0.009 1.932-0.009 2.195 0 0.213 0.144 0.462 0.55 0.384 3.177-1.059 5.466-4.057 5.466-7.59 0-4.418-3.582-8-8-8z"></path>
-                </svg>
-            </a>
-        </footer>
+          </div>
+          <!-- Arcade Game Project-->
+          <div class="featured-work"><img class="featured-work-image" src="images/arcade-game-screenshot-medium.png" alt="Arcade Game Project Screenshot">
+            <div class="featured-work-information">
+              <div class="featured-work-title-container">
+                <p class="featured-work-title">Arcade Game Project</p>
+                <!-- Actions Icon--><svg class="actions-icon" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle cx="12" cy="6" r="2"></circle>
+        <circle cx="12" cy="12" r="2"></circle>
+        <circle cx="12" cy="18" r="2"></circle>
+    </g>
+</svg>
+              </div>
+            </div>
+            <div class="featured-work-description-container hidden-away">
+              <p class="featured-work-description">An arcade game for Udacity's Front-End Web Developer Nanodegree</p><br><br><a class="online-demo-link" href="https://mggwxyz.github.io/frontend-nanodegree-arcade-game"><svg class="icon" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path fill="#000000" d="M4.54253663 22.102366 2 14 13 14 15.6396076 20.8577294 22 20.8577294 22 22z"></path>
+        <path d="M13.3517574,9.6457045 C11.9648509,9.01768623 11,7.62151962 11,6 C11,3.790861 12.790861,2 15,2 C17.209139,2 19,3.790861 19,6 C19,7.65738762 17.991992,9.07934236 16.5555939,9.68624636 C17.2330549,9.82681241 18.5700981,10.3136794 19.7048529,12 C21.300213,14.3708104 22.185218,19.8821377 22.185218,19.8821377 L16.4647907,19.8821377 L13.9813682,13.0560729 L7.42815887,13.0560729 C7.42815887,13.0560729 7.72034181,11.9159976 9.26439068,10.7725936 C10.4324117,9.90764694 12.4421522,9.69700332 13.3517574,9.6457045 Z" fill="#000000"></path>
+    </g>
+</svg><span>Online Demo</span></a><a title="Arcade Game Source Code" href="https://github.com/mggwxyz/frontend-nanodegree-arcade-game"><svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+    <path class="icon" fill="#000000" d="M8 0.198c-4.418 0-8 3.582-8 8 0 3.535 2.292 6.533 5.471 7.591 0.4 0.074 0.547-0.174 0.547-0.385 0-0.191-0.008-0.821-0.011-1.489-2.226 0.484-2.695-0.944-2.695-0.944-0.364-0.925-0.888-1.171-0.888-1.171-0.726-0.497 0.055-0.486 0.055-0.486 0.803 0.056 1.226 0.824 1.226 0.824 0.714 1.223 1.872 0.869 2.328 0.665 0.072-0.517 0.279-0.87 0.508-1.070-1.777-0.202-3.645-0.888-3.645-3.954 0-0.873 0.313-1.587 0.824-2.147-0.083-0.202-0.357-1.015 0.077-2.117 0 0 0.672-0.215 2.201 0.82 0.638-0.177 1.322-0.266 2.002-0.269 0.68 0.003 1.365 0.092 2.004 0.269 1.527-1.035 2.198-0.82 2.198-0.82 0.435 1.102 0.162 1.916 0.079 2.117 0.513 0.56 0.823 1.274 0.823 2.147 0 3.073-1.872 3.749-3.653 3.947 0.287 0.248 0.543 0.735 0.543 1.481 0 1.070-0.009 1.932-0.009 2.195 0 0.213 0.144 0.462 0.55 0.384 3.177-1.059 5.466-4.057 5.466-7.59 0-4.418-3.582-8-8-8z"></path>
+</svg><span>Source code</span></a>
+            </div>
+          </div>
+          <!-- Resume Project-->
+          <div class="featured-work"><img class="featured-work-image" src="images/resume-screenshot-medium.png" alt="Resume Project Screenshot">
+            <div class="featured-work-information">
+              <div class="featured-work-title-container">
+                <p class="featured-work-title">Resume Project</p>
+                <!-- Actions Icon--><svg class="actions-icon" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle cx="12" cy="6" r="2"></circle>
+        <circle cx="12" cy="12" r="2"></circle>
+        <circle cx="12" cy="18" r="2"></circle>
+    </g>
+</svg>
+              </div>
+            </div>
+            <div class="featured-work-description-container hidden-away">
+              <p class="featured-work-description">A responsive resume for Udacity's Front-End Web Developer Nanodegree</p><br><br><a class="online-demo-link" href="https://mggwxyz.github.io/frontend-nanodegree-resume"><svg class="icon" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path fill="#000000" d="M4.54253663 22.102366 2 14 13 14 15.6396076 20.8577294 22 20.8577294 22 22z"></path>
+        <path d="M13.3517574,9.6457045 C11.9648509,9.01768623 11,7.62151962 11,6 C11,3.790861 12.790861,2 15,2 C17.209139,2 19,3.790861 19,6 C19,7.65738762 17.991992,9.07934236 16.5555939,9.68624636 C17.2330549,9.82681241 18.5700981,10.3136794 19.7048529,12 C21.300213,14.3708104 22.185218,19.8821377 22.185218,19.8821377 L16.4647907,19.8821377 L13.9813682,13.0560729 L7.42815887,13.0560729 C7.42815887,13.0560729 7.72034181,11.9159976 9.26439068,10.7725936 C10.4324117,9.90764694 12.4421522,9.69700332 13.3517574,9.6457045 Z" fill="#000000"></path>
+    </g>
+</svg><span>Online Demo</span></a><a title="Resume Source Code" href="https://github.com/mggwxyz/frontend-nanodegree-resume"><svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+    <path class="icon" fill="#000000" d="M8 0.198c-4.418 0-8 3.582-8 8 0 3.535 2.292 6.533 5.471 7.591 0.4 0.074 0.547-0.174 0.547-0.385 0-0.191-0.008-0.821-0.011-1.489-2.226 0.484-2.695-0.944-2.695-0.944-0.364-0.925-0.888-1.171-0.888-1.171-0.726-0.497 0.055-0.486 0.055-0.486 0.803 0.056 1.226 0.824 1.226 0.824 0.714 1.223 1.872 0.869 2.328 0.665 0.072-0.517 0.279-0.87 0.508-1.070-1.777-0.202-3.645-0.888-3.645-3.954 0-0.873 0.313-1.587 0.824-2.147-0.083-0.202-0.357-1.015 0.077-2.117 0 0 0.672-0.215 2.201 0.82 0.638-0.177 1.322-0.266 2.002-0.269 0.68 0.003 1.365 0.092 2.004 0.269 1.527-1.035 2.198-0.82 2.198-0.82 0.435 1.102 0.162 1.916 0.079 2.117 0.513 0.56 0.823 1.274 0.823 2.147 0 3.073-1.872 3.749-3.653 3.947 0.287 0.248 0.543 0.735 0.543 1.481 0 1.070-0.009 1.932-0.009 2.195 0 0.213 0.144 0.462 0.55 0.384 3.177-1.059 5.466-4.057 5.466-7.59 0-4.418-3.582-8-8-8z"></path>
+</svg><span>Source code</span></a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <footer><a id="github-icon-link" title="Responsive Portfolio Source Code" href="https://github.com/mggwxyz/frontend-nanodegree-responsive-portfolio"><svg id="main-github-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+    <path class="icon" fill="#000000" d="M8 0.198c-4.418 0-8 3.582-8 8 0 3.535 2.292 6.533 5.471 7.591 0.4 0.074 0.547-0.174 0.547-0.385 0-0.191-0.008-0.821-0.011-1.489-2.226 0.484-2.695-0.944-2.695-0.944-0.364-0.925-0.888-1.171-0.888-1.171-0.726-0.497 0.055-0.486 0.055-0.486 0.803 0.056 1.226 0.824 1.226 0.824 0.714 1.223 1.872 0.869 2.328 0.665 0.072-0.517 0.279-0.87 0.508-1.070-1.777-0.202-3.645-0.888-3.645-3.954 0-0.873 0.313-1.587 0.824-2.147-0.083-0.202-0.357-1.015 0.077-2.117 0 0 0.672-0.215 2.201 0.82 0.638-0.177 1.322-0.266 2.002-0.269 0.68 0.003 1.365 0.092 2.004 0.269 1.527-1.035 2.198-0.82 2.198-0.82 0.435 1.102 0.162 1.916 0.079 2.117 0.513 0.56 0.823 1.274 0.823 2.147 0 3.073-1.872 3.749-3.653 3.947 0.287 0.248 0.543 0.735 0.543 1.481 0 1.070-0.009 1.932-0.009 2.195 0 0.213 0.144 0.462 0.55 0.384 3.177-1.059 5.466-4.057 5.466-7.59 0-4.418-3.582-8-8-8z"></path>
+</svg></a></footer>
     </div>
-
     <script src="js/main.js"></script>
-
-</body>
+  </body>
 </html>
