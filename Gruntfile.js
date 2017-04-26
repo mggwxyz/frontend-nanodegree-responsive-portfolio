@@ -46,9 +46,57 @@ module.exports = function(grunt){
                 files: [{
                     expand: true,
                     cwd: 'src',
-                    src: ['css/**', 'js/**', 'images/fixed/**', 'index.html'],
+                    src: ['js/**', 'images/fixed/**', 'index.html'],
                     dest: 'dist/'
                 }]
+            }
+        },
+
+        // Task to compile scss files into css
+        sass: {
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: 'src/stylesheets/scss',
+                    src: ['*.scss'],
+                    dest: 'src/stylesheets/css/',
+                    ext: '.css'
+                }]
+            }
+        },
+
+        autoprefixer: {
+            build: {
+                expand: true,
+                cwd: 'src/stylesheets/css',
+                src: [ '**/*.css' ],
+                dest: 'src/stylesheets/css'
+            }
+        },
+
+        cssmin: {
+            build: {
+                files: {
+                    'dist/stylesheets/css/main.css': [ 'src/stylesheets/css/**/*.css' ]
+                }
+            }
+        },
+
+        connect: {
+            server: {
+                options: {
+                    livereload: true,
+                    port: 8080,
+                    base: 'dist/',
+                    hostname: '*'
+                }
+            }
+        },
+
+        watch: {
+            stylesheets: {
+                files: 'src/**/*.scss',
+                tasks: ['stylesheets']
             }
         }
 
@@ -59,6 +107,22 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-mkdir');
-    grunt.registerTask('default', ['clean', 'mkdir', 'copy','responsive_images']);
+    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-autoprefixer');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+
+    grunt.registerTask('stylesheets', 'Compiles the stylesheets',
+        [ 'sass', 'autoprefixer', 'cssmin' ]
+    );
+
+    grunt.registerTask('build', 'Compiles all of the assets and copies the files to the dist director.',
+        ['clean', 'mkdir', 'stylesheets', 'copy', 'responsive_images']
+    );
+
+    grunt.registerTask('develop', 'Watches the project for changes, automatically builds them and runs a server',
+        ['build', 'connect', 'watch']
+    );
 
 };
