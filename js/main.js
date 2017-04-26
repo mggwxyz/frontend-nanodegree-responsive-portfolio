@@ -4,8 +4,6 @@
 
     function addEventListeners() {
 
-        console.log('adding event listeners');
-
         // Toggle class
         function toggleClass(element, classToBeToggled){
             var elementClasses = element.className.toString();
@@ -25,7 +23,7 @@
             actionIcons[i].addEventListener('click', function(event) {
                 var el = event.currentTarget;
                 var grandParent = el.parentNode.parentNode;
-                var descriptionContainer = grandParent.querySelector('div.featured-work-description-container');
+                var descriptionContainer = grandParent.nextSibling.nextSibling;
                 toggleClass(grandParent, 'full-height');
                 toggleClass(descriptionContainer, 'hidden-away');
             });
