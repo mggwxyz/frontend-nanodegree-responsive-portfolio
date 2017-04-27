@@ -453,10 +453,10 @@ a:hover > #main-github-icon path, polygon {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 30%; }
+  width: 20%; }
 
 #logo-image {
-  max-width: 110px;
+  max-width: 75px;
   border-radius: 5px; }
 
 #personal-info-container {
@@ -467,18 +467,18 @@ a:hover > #main-github-icon path, polygon {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  width: 70%; }
+  width: 80%; }
 
 #name {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 40px;
+  font-size: 24px;
   text-transform: lowercase;
   background-color: #1C3463;
   color: #ffffff;
@@ -489,7 +489,7 @@ a:hover > #main-github-icon path, polygon {
 #profession {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 14px;
   background-color: #1C3463;
   color: #ffffff;
   padding: 5px 10px 10px 10px;
@@ -520,19 +520,20 @@ a:hover > #main-github-icon path, polygon {
   color: #ffffff;
   padding: 0 0.5em 0 0.5em;
   text-transform: lowercase;
-  border-radius: 5px; }
+  border-radius: 5px;
+  font-size: 24px; }
 
 #featured-work-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 100%;
   margin-bottom: 20px; }
 
@@ -557,7 +558,7 @@ a:hover > #main-github-icon path, polygon {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 32%;
+  width: 100%;
   position: relative;
   margin-bottom: 20px;
   border-radius: 5px; }
@@ -676,42 +677,43 @@ a:hover {
 .online-demo-link {
   margin: 0 10px; }
 
-@media screen and (max-width: 550px) {
-  #logo-container {
-    width: 20%;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
-
-  #logo-image {
-    max-width: 75px; }
-
-  #personal-info-container {
-    width: 80%;
+@media screen and (min-width: 650px) {
+  #featured-work-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
 
+  .featured-work {
+    width: 48%;
+    margin: 0 1% 20px 1%; }
+
   #name {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 24px; }
+    font-size: 40px; }
+
+  #logo-container {
+    width: 30%; }
+
+  #logo-image {
+    max-width: 110px; }
+
+  #personal-info-container {
+    width: 70%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 
   #profession {
-    font-size: 14px; }
+    font-size: 18px; }
 
   #featured-work-label {
-    font-size: 24px; }
-
-  #featured-work-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-
-  .featured-work {
-    width: 100%; } }
-@media screen and (max-width: 800px) {
+    font-size: 28px; } }
+@media screen and (min-width: 900px) {
   #featured-work-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -723,8 +725,6 @@ a:hover {
         -ms-flex-pack: justify;
             justify-content: space-between; }
 
-  #featured-work-label {
-    font-size: 28px; }
-
   .featured-work {
-    width: 48%; } }
+    margin: 0 0 20px 0;
+    width: 30%; } }

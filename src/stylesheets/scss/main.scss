@@ -96,26 +96,26 @@ a:hover > #main-github-icon path,polygon {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 30%;
+  width: 20%;
 }
 
 #logo-image {
-  max-width: 110px;
+  max-width: 75px;
   border-radius: 5px;
 }
 
 #personal-info-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-end;
-  width: 70%;
+  width: 80%;
 }
 
 #name {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 40px;
+  font-size: 24px;
   text-transform: lowercase;
   background-color: $dark-blue;
   color: $white;
@@ -124,16 +124,16 @@ a:hover > #main-github-icon path,polygon {
   border-radius: 5px 5px 0  5px;
 }
 
+
 #profession {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 14px;
   background-color: $dark-blue;;
   color: $white;
   padding: 5px 10px 10px 10px;
   border-radius: 0 0 5px 5px;
 }
-
 
 #main-image {
   width: 100%;
@@ -158,12 +158,13 @@ a:hover > #main-github-icon path,polygon {
   padding: 0 0.5em 0 0.5em;
   text-transform: lowercase;
   border-radius: 5px;
+  font-size: 24px;
 }
 
 #featured-work-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
   width: 100%;
   margin-bottom: 20px;
 
@@ -182,7 +183,7 @@ a:hover > #main-github-icon path,polygon {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 32%;
+  width: 100%;
   position: relative;
   margin-bottom: 20px;
   border-radius: 5px;
@@ -319,59 +320,55 @@ a:hover {
   margin: 0 10px;
 }
 
-@media screen and (max-width: 550px) {
 
-  #logo-container {
-    width: 20%;
-    align-items: flex-start;
-  }
 
-  #logo-image {
-    max-width: 75px;
-  }
-
-  #personal-info-container {
-    width: 80%;
+@media screen and (min-width: 650px) {
+  #featured-work-container {
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-start;
   }
 
+  .featured-work {
+    width: 48%;
+    margin: 0 1% 20px 1%;
+  }
+
   #name {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 24px;
+    font-size: 40px;
+  }
+
+  #logo-container {
+    width: 30%;
+  }
+
+  #logo-image {
+    max-width: 110px;
+  }
+
+  #personal-info-container {
+    width: 70%;
+    justify-content: center;
   }
 
   #profession {
-    font-size: 14px;
+    font-size: 18px;
   }
+
   #featured-work-label {
-    font-size: 24px;
+    font-size: 28px;
   }
-
-  #featured-work-container {
-    flex-direction: column;
-  }
-
-  .featured-work {
-    width: 100%;
-  }
-
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 900px) {
   #featured-work-container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  #featured-work-label {
-    font-size: 28px;
-  }
-
   .featured-work {
-    width: 48%;
+    margin: 0 0 20px 0;
+    width: 30%;
   }
-
 }
-
