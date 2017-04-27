@@ -114,7 +114,7 @@ module.exports = function(grunt){
             },
             pug :{
                 files: 'src/**/*.pug',
-                tasks: ['pug']
+                tasks: ['pug', 'copy']
             }
         }
 

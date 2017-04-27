@@ -1,6 +1,12 @@
 @import "normalize";
 @import "fonts";
 
+
+$light-blue: #59ACE5;
+$dark-blue: #1C3463;
+$white: #ffffff;
+$black: #000000;
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -10,8 +16,8 @@
 
 body {
   font-family: 'Titillium Web', sans-serif;
-  background-color: #59ACE5;
-  color: black;
+  background-color: $light-blue;
+  color: $black;
   border: 0;
   margin: 0;
 }
@@ -45,23 +51,26 @@ footer {
   justify-content: center;
   align-items: center;
 
-  background-color: #1C3463;
+  background-color: $dark-blue;
 
+}
+
+span {
+  margin: 0 5px;
 }
 
 #main-github-icon {
   width: 32px;
   height: 32px;
-  fill: #000000
 }
 
 
 #main-github-icon path,polygon {
-  fill: #ffffff;
+  fill: $white;
 }
 
 a:hover > #main-github-icon path,polygon {
-  fill: #59ACE5;
+  fill: $light-blue;
 }
 
 #main-container {
@@ -94,8 +103,8 @@ a:hover > #main-github-icon path,polygon {
   margin-bottom: 0;
   font-size: 40px;
   text-transform: lowercase;
-  background-color: #1C3463;
-  color: white;
+  background-color: $dark-blue;
+  color: $white;
   padding: 0 10px 5px 10px;
   text-align: right;
   border-radius: 5px 5px 0  5px;
@@ -105,8 +114,8 @@ a:hover > #main-github-icon path,polygon {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 18px;
-  background-color: #1C3463;;
-  color: white;
+  background-color: $dark-blue;;
+  color: $white;
   padding: 5px 10px 10px 10px;
   border-radius: 0 0 5px 5px;
 }
@@ -130,8 +139,8 @@ a:hover > #main-github-icon path,polygon {
 }
 
 #featured-work-label {
-  background-color: #1C3463;;
-  color: white;
+  background-color: $dark-blue;;
+  color: $white;
   padding: 0 0.5em 0 0.5em;
   text-transform: lowercase;
   border-radius: 5px;
@@ -148,8 +157,8 @@ a:hover > #main-github-icon path,polygon {
 
 #copyright {
   padding: 20px;
-  background-color: #1C3463;;
-  color: white;
+  background-color: $dark-blue;
+  color: $white;
   margin: 0 auto;
   height: 6rem;
 }
@@ -173,13 +182,14 @@ a:hover > #main-github-icon path,polygon {
 
 .featured-work-image {
   border-radius: 5px;
+  border: 2px solid $dark-blue;
 }
 
 .featured-work-information {
   bottom: 0;
   width: 100%;
-  color: white;
-  background-color: #1C3463;
+  color: $white;
+  background-color: $dark-blue;
   padding: 0 0 0 0;
   display:flex;
   flex-direction: column;
@@ -197,8 +207,8 @@ a:hover > #main-github-icon path,polygon {
 
 .featured-work-description-container {
   height: 100%;
-  background-color: white;
-  color: black;
+  background-color: $white;
+  color: $black;
   border-radius: 0 0 5px 5px;
 
 }
@@ -234,7 +244,7 @@ a:hover > #main-github-icon path,polygon {
 }
 
 .actions-icon:hover g {
-  fill: #59ACE5;
+  fill: $light-blue;
 }
 
 .actions-icon g {
@@ -242,11 +252,11 @@ a:hover > #main-github-icon path,polygon {
 }
 
 .arrow:hover path {
-  fill: #59ACE5;
+  fill: $light-blue;
 }
 
 .full-height {
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px;
   height: 100%;
 }
 
@@ -273,15 +283,15 @@ a {
 }
 
 a:hover > .icon path,polygon {
-  fill: #59ACE5;
+  fill: $light-blue;
 }
 
 a:hover {
-  color: #59ACE5;
+  color: $light-blue;
 }
 
 .online-demo-link {
-  margin-right: 1rem;
+  margin: 0 10px;
 }
 
 @media screen and (max-width: 550px) {

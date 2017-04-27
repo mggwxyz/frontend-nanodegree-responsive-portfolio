@@ -382,7 +382,7 @@ template {
 body {
   font-family: 'Titillium Web', sans-serif;
   background-color: #59ACE5;
-  color: black;
+  color: #000000;
   border: 0;
   margin: 0; }
 
@@ -418,10 +418,12 @@ footer {
           align-items: center;
   background-color: #1C3463; }
 
+span {
+  margin: 0 5px; }
+
 #main-github-icon {
   width: 32px;
-  height: 32px;
-  fill: #000000; }
+  height: 32px; }
 
 #main-github-icon path, polygon {
   fill: #ffffff; }
@@ -471,7 +473,7 @@ a:hover > #main-github-icon path, polygon {
   font-size: 40px;
   text-transform: lowercase;
   background-color: #1C3463;
-  color: white;
+  color: #ffffff;
   padding: 0 10px 5px 10px;
   text-align: right;
   border-radius: 5px 5px 0  5px; }
@@ -481,7 +483,7 @@ a:hover > #main-github-icon path, polygon {
   margin-bottom: 0;
   font-size: 18px;
   background-color: #1C3463;
-  color: white;
+  color: #ffffff;
   padding: 5px 10px 10px 10px;
   border-radius: 0 0 5px 5px; }
 
@@ -507,7 +509,7 @@ a:hover > #main-github-icon path, polygon {
 
 #featured-work-label {
   background-color: #1C3463;
-  color: white;
+  color: #ffffff;
   padding: 0 0.5em 0 0.5em;
   text-transform: lowercase;
   border-radius: 5px; }
@@ -529,7 +531,7 @@ a:hover > #main-github-icon path, polygon {
 #copyright {
   padding: 20px;
   background-color: #1C3463;
-  color: white;
+  color: #ffffff;
   margin: 0 auto;
   height: 6rem; }
 
@@ -558,12 +560,13 @@ a:hover > #main-github-icon path, polygon {
   font-size: 20px; }
 
 .featured-work-image {
-  border-radius: 5px; }
+  border-radius: 5px;
+  border: 2px solid #1C3463; }
 
 .featured-work-information {
   bottom: 0;
   width: 100%;
-  color: white;
+  color: #ffffff;
   background-color: #1C3463;
   padding: 0 0 0 0;
   display: -webkit-box;
@@ -591,8 +594,8 @@ a:hover > #main-github-icon path, polygon {
 
 .featured-work-description-container {
   height: 100%;
-  background-color: white;
-  color: black;
+  background-color: #ffffff;
+  color: #000000;
   border-radius: 0 0 5px 5px; }
 
 .featured-work-description {
@@ -629,7 +632,7 @@ a:hover > #main-github-icon path, polygon {
   fill: #59ACE5; }
 
 .full-height {
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px;
   height: 100%; }
 
 .hidden-away {
@@ -656,7 +659,7 @@ a:hover {
   color: #59ACE5; }
 
 .online-demo-link {
-  margin-right: 1rem; }
+  margin: 0 10px; }
 
 @media screen and (max-width: 550px) {
   #logo-container {
