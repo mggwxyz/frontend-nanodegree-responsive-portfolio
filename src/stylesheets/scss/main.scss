@@ -4,6 +4,7 @@
 
 $light-blue: #59ACE5;
 $dark-blue: #1C3463;
+$highlight: #ff469f;
 $white: #ffffff;
 $black: #000000;
 
@@ -59,20 +60,33 @@ span {
   margin: 0 5px;
 }
 
+
+
 #main-github-icon {
   width: 32px;
   height: 32px;
+  outline: none;
 }
-
 
 #main-github-icon path,polygon {
   fill: $white;
 }
 
 a:hover > #main-github-icon path,polygon {
-  fill: $light-blue;
+  fill: $highlight;
 }
 
+#github-icon-link {
+  outline: none;
+
+  &:hover {
+    outline: none;
+  }
+
+  &:hover,&:focus > #main-github-icon path {
+    fill: $highlight;
+  }
+}
 #main-container {
   width: 100%;
   margin: 0 auto;
@@ -243,15 +257,21 @@ a:hover > #main-github-icon path,polygon {
 }
 
 .options-icon:hover g {
-  fill: $light-blue;
+  fill: $highlight;
 }
 
 .options-icon g {
-  fill: #ffffff;
+  fill: $white;
 }
 
-.arrow:hover path {
-  fill: $light-blue;
+.options-button {
+  background-color: $dark-blue;
+  border: 0;
+  outline: 0;
+
+  &:focus .options-icon g{
+    fill: $highlight;
+  }
 }
 
 .full-height {
@@ -270,23 +290,29 @@ a:hover > #main-github-icon path,polygon {
 .icon {
   width: 16px;
   height: 16px;
-  fill: #000000
+  fill: $white;
 }
 
 .icon path,polygon {
-  fill: #00000;
+  fill: $black;
 }
 
 a {
   text-decoration: none;
+  outline: none;
+
+  &:hover,&:focus {
+    outline: none;
+    color: $highlight;
+  }
 }
 
-a:hover > .icon path,polygon {
-  fill: $light-blue;
+a:hover,a:focus > path {
+  fill: $highlight;
 }
 
 a:hover {
-  color: $light-blue;
+  color: $highlight;
 }
 
 .online-demo-link {

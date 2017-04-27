@@ -423,13 +423,21 @@ span {
 
 #main-github-icon {
   width: 32px;
-  height: 32px; }
+  height: 32px;
+  outline: none; }
 
 #main-github-icon path, polygon {
   fill: #ffffff; }
 
 a:hover > #main-github-icon path, polygon {
-  fill: #59ACE5; }
+  fill: #ff469f; }
+
+#github-icon-link {
+  outline: none; }
+  #github-icon-link:hover {
+    outline: none; }
+  #github-icon-link:hover, #github-icon-link:focus > #main-github-icon path {
+    fill: #ff469f; }
 
 #main-container {
   width: 100%;
@@ -622,13 +630,17 @@ a:hover > #main-github-icon path, polygon {
   cursor: pointer; }
 
 .options-icon:hover g {
-  fill: #59ACE5; }
+  fill: #ff469f; }
 
 .options-icon g {
   fill: #ffffff; }
 
-.arrow:hover path {
-  fill: #59ACE5; }
+.options-button {
+  background-color: #1C3463;
+  border: 0;
+  outline: 0; }
+  .options-button:focus .options-icon g {
+    fill: #ff469f; }
 
 .full-height {
   border-radius: 5px;
@@ -643,19 +655,23 @@ a:hover > #main-github-icon path, polygon {
 .icon {
   width: 16px;
   height: 16px;
-  fill: #000000; }
+  fill: #ffffff; }
 
 .icon path, polygon {
-  fill: #00000; }
+  fill: #000000; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  outline: none; }
+  a:hover, a:focus {
+    outline: none;
+    color: #ff469f; }
 
-a:hover > .icon path, polygon {
-  fill: #59ACE5; }
+a:hover, a:focus > path {
+  fill: #ff469f; }
 
 a:hover {
-  color: #59ACE5; }
+  color: #ff469f; }
 
 .online-demo-link {
   margin: 0 10px; }
