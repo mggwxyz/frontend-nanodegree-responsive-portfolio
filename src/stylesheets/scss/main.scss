@@ -232,22 +232,21 @@ a:hover > #main-github-icon path,polygon {
   fill: #ffffff;
 }
 
-.actions-icon {
-  margin: 5px 0 0 0;
+.options-icon {
   border: 0;
   width: 24px;
   height: 24px
 }
 
-.actions-icon:hover {
+.options-icon:hover {
   cursor: pointer;
 }
 
-.actions-icon:hover g {
+.options-icon:hover g {
   fill: $light-blue;
 }
 
-.actions-icon g {
+.options-icon g {
   fill: #ffffff;
 }
 

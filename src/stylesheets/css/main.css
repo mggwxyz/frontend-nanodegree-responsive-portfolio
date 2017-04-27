@@ -613,19 +613,18 @@ a:hover > #main-github-icon path, polygon {
 .arrow path {
   fill: #ffffff; }
 
-.actions-icon {
-  margin: 5px 0 0 0;
+.options-icon {
   border: 0;
   width: 24px;
   height: 24px; }
 
-.actions-icon:hover {
+.options-icon:hover {
   cursor: pointer; }
 
-.actions-icon:hover g {
+.options-icon:hover g {
   fill: #59ACE5; }
 
-.actions-icon g {
+.options-icon g {
   fill: #ffffff; }
 
 .arrow:hover path {
