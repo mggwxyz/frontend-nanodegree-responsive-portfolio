@@ -17,7 +17,7 @@
         }
 
         // Find all the project info buttons
-        var actionIcons = document.querySelectorAll('.options-icon');
+        var actionIcons = document.querySelectorAll('.options-button');
 
         for ( var i = 0; i < actionIcons.length; i++){
             actionIcons[i].addEventListener('click', function(event) {
