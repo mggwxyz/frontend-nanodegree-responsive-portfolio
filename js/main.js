@@ -23,7 +23,7 @@
             actionIcons[i].addEventListener('click', function(event) {
                 var el = event.currentTarget;
                 var grandParent = el.parentNode.parentNode;
-                var descriptionContainer = grandParent.nextSibling.nextSibling;
+                var descriptionContainer = el.parentNode.nextSibling.nextSibling;
                 toggleClass(grandParent, 'full-height');
                 toggleClass(descriptionContainer, 'hidden-away');
             });
