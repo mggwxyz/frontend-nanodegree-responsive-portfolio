@@ -1,3 +1,5 @@
+> **Archived 2026-07** — Udacity front-end nanodegree project (2017).
+
 # Responsive Portfolio | Front-End Nanodegree
 
 A responsive portfolio created for Udacity's Front-End Web Developer Nanodegree
